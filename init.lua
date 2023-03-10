@@ -134,6 +134,11 @@ vim.cmd [[colorscheme onedark]]
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
+-- Set page down and up
+  vim.keymap.set('n', '<C-d>', '<C-d>zz', {desc = 'Move down half a page and center'})
+  vim.keymap.set('n', '<C-u>', '<C-u>zz', {desc = 'Move up half a page and center'})
+
+
 -- [[ Basic Keymaps ]]
 -- Set <space> as the leader key
 -- See `:help mapleader`
